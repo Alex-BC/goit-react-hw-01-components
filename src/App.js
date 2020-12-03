@@ -1,4 +1,5 @@
 import user from './components/Profile/user.json';
+import Profile from './components/Profile/Profile';
 
 export default function App() {
   return (
@@ -14,5 +15,3 @@ export default function App() {
     </div>
   );
 }
-
-export default App;
