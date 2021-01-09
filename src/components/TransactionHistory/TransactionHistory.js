@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import s from './TransactionHistory.module.css';
 
 function TransactionHistory({ items }) {
@@ -25,15 +25,15 @@ function TransactionHistory({ items }) {
   );
 }
 
-// TransactionHistory.propTypes = {
-//   items: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       type: PropTypes.string.isRequired,
-//       amount: PropTypes.string.isRequired,
-//       currency: PropTypes.string.isRequired,
-//     }),
-//   ),
-// };
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }),
+  ),
+};
 
 export default TransactionHistory;
